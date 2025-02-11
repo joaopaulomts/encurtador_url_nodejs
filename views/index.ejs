@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encurtador de URL</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Encurtador de URL</h1>
+
+      <form action="/shortUrls" method="POST">
+        <input
+          type="url"
+          name="fullUrl"
+          placeholder="Cole sua URL aqui"
+          required
+        />
+        <button type="submit">Encurtar</button>
+      </form>
+
+      <% if (shortUrls.length > 0) { %>
+      <table>
+        <thead>
+          <tr>
+            <th>URL Original</th>
+            <th>URL Encurtada</th>
+            <th>Clicks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% shortUrls.forEach(url => { %>
+          <tr>
+            <td><a href="<%= url.full %>"><%= url.full %></a></td>
+            <td>
+              <a href="/<%= url.short %>"
+                >http://localhost:5000/<%= url.short %></a
+              >
+            </td>
+            <td><%= url.clicks %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <% } %>
+    </div>
+  </body>
+</html>
