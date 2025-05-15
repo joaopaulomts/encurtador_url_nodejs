@@ -1,4 +1,3 @@
-```markdown
 # 🔗 URL Shortener - Encurtador de Links
 
 Um encurtador de URL simples e eficiente construído com Node.js, Express e SQLite. Transforme URLs longas em links curtos e fáceis de compartilhar!
@@ -61,4 +60,3 @@ Um encurtador de URL simples e eficiente construído com Node.js, Express e SQLi
    ```
    Formato: http://localhost:5000/abc123
    ```
-```
