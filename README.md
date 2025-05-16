@@ -2,7 +2,6 @@
 
 Um encurtador de URL simples e eficiente construído com Node.js, Express e SQLite. Transforme URLs longas em links curtos e fáceis de compartilhar!
 
-![Screenshot da Aplicação](screenshot.png) <!-- Adicione uma imagem depois -->
 
 ## ✨ Funcionalidades
 
