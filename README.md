@@ -51,11 +51,13 @@ Um encurtador de URL simples e eficiente construído com Node.js, Express e SQLi
 ### 🔗 Criando um novo link encurtado
 1. Acesse a página inicial em `http://localhost:5000`
 2. No campo indicado, cole sua URL completa (incluindo `http://` ou `https://`)
+   
    ```
    Exemplo: https://www.exemplo.com/uma-url-muito-longa/que-deseja-encurtar
    ```
-3. Clique no botão **"Encurtar"**
-4. Pronto! Seu link aparecerá na tabela abaixo:
+4. Clique no botão **"Encurtar"**
+5. Pronto! Seu link aparecerá na tabela abaixo:
+   
    ```
    Formato: http://localhost:5000/abc123
    ```
